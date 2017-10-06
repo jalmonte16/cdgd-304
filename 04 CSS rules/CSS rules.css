@@ -1,12 +1,12 @@
-p{font-family: helvetica;}
-p{color: aquamarine;}
-p{font-size: 24pt;}
-p{background-color: azure}
-p{border: soild;}
-p{text-align: left;}
-p{text-indent: 10px;}
-p{font-weight: bold;}
-p{font-kerning: 8pt;}
-H1{color: brown;}
-p{overflow:scroll}
-p{padding: 10px;}
+p{font-family: papyrus;}
+p{color: darkgreen;}
+p{font-size: 4pt;}
+p{background-color: orange}
+body{border: dashed;}
+p{text-align: justify;}
+p{text-indent: 25px;}
+p{font-weight: lighter;}
+p{font-kerning: 16pt;}
+H1{color: yellow;}
+p{overflow: hidden}
+p{padding: 20px;}
