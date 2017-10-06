@@ -1,0 +1,19 @@
+/* Put your CSS here. */
+
+body {font-family: helvetica, verdana, courier, georgia;
+background-color: white;line-height: 14pt;}
+
+h1 {font-family: georgia; font-size: 21pt; line-height: 1.5pt;}
+h2 {font-family: georgia; font-size: 12pt; font-weight: normal}
+#author {text-transform: uppercase;}
+h3 {display: none; font-family: verdana; color: dimgrey;text-transform: uppercase; font-size: 12pt;line-height: 14pt;}
+p.-one {font-family: helvetica; color: limegreen;}
+p.-two {/*background-color: red;*/ font-family: georgia; color: mediumblue;}
+p.-three {font-family: courier; color: deeppink;}
+p.-four {font-family: georgia; color: mediumblue;}
+p.-five {font-family: helvetica; color: limegreen;}
+p.-six {font-family: courier; color: deeppink;}
+p.-seven {font-family: helvetica; color: limegreen;}
+p.-eight {font-family: georgia; color: mediumblue;}
+p.-nine {font-family: courier; color: deeppink;}
+p{color: black !important;}
