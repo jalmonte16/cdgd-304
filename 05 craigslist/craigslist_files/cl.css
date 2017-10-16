@@ -791,6 +791,7 @@ table.four_pane_search {
     font-size: .9375em;
     min-height: 1.3em;
     position: relative
+        
 }
 
 .breadcrumbs-container ul, .breadcrumbs-container ol {
@@ -1100,7 +1101,8 @@ table.four_pane_search {
     }
 
     .search .breadcrumbs-container .breadcrumb-arrow {
-        display: inline
+        display: inline;
+        color: mediumspringgreen;
     }
 
     .search .breadcrumbs-container li:nth-last-child(2) .breadcrumb-arrow {

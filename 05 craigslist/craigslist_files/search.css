@@ -353,10 +353,10 @@ span.cur_day {
     }
 
     .paginator {
-        margin: 0 auto;
+        margin: -1em 0em 2em 8.5em;
         width: 310px;
-        margin-left: unset;
-        margin-right: unset;
+        
+    
         
     }
 
