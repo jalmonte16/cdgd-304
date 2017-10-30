@@ -10,12 +10,7 @@
 
 /* basic elements */
 
-@font-face {
-    font-family: 'RohnRounde';
-    src: url ('06zengarden/NineFont-RohnRoundeheavy');}
-body {
-    font-family: RohnRounde, opensans;}
-}
+
 a. {
     font: josephinsans
 }
@@ -25,7 +20,7 @@ html {
 	}
 body { 
 	font: 75% Open Sans, sans-serif;
-	line-height: 1.88889;
+/*	line-height: 1.88889;*/
 	color: #555753; 
 	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
 	margin: 0; 
@@ -33,10 +28,9 @@ body {
 	}
 p { 
 	margin-top: 0; 
-	text-align: justify;
 	}
 h3 { 
-	font: 1.4em josefinsans, sans-serif;
+	font: 1.4em comfortaa, sans-serif;
     font-weight: bolder;
     font-weight:900;
 	letter-spacing: 1px; 
@@ -64,7 +58,10 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
+	background: url(Elements/Artboard%2010.png) no-repeat top left;
+    background-position: center top;
+    height: 3500px;
+    width: 1066px;
 	padding: 0 175px 0 110px;  
 	margin: 0; 
 	position: relative;
@@ -76,19 +73,27 @@ abbr {
 	}
 
 header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
+/*
+    font-family: comfortaa, sans-serif;
+    font-size: 6em;
+    text-transform: uppercase;
+*/
+    background: transparent url(Elements/wordmark.png) no-repeat top left;
+    background-size: 75%;
 	margin-top: 10px;
 	display: block;
-	width: 219px;
-	height: 87px;
+    color: rgba(255, 255, 255, .0);
+    height: 384px;
+    width: 306; 
 	float: left;
 
-	text-indent: 100%;
+    text-indent: 15%;
 	white-space: nowrap;
 	overflow: hidden;
 	}
 header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
+	display: none;
+    background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
 	margin-top: 58px; 
 	margin-bottom: 40px; 
 	width: 200px; 
@@ -101,7 +106,7 @@ header h2 {
 	}
 header {
 	padding-top: 20px;
-	height: 87px;
+	height: 384px;
 }
 
 .summary {
@@ -111,10 +116,13 @@ header {
 	float: left;
 	}
 .summary p {
-	font: italic 1.1em/2.2 Open Sans; 
+	font-family: Roboto slab;
+    font-size: 1em; 
     font-weight: bolder
-	text-align: center;
+	text-align: left;
 	}
+
+
 
 .preamble {
 	clear: right; 
@@ -133,27 +141,31 @@ footer a:link, footer a:visited {
 	}
 
 .sidebar {
+/*
 	margin-left: 600px; 
 	position: absolute; 
+*/
+    display: flex;
+    flex-direction: column-reverse
 	top: 0; 
 	right: 0;
 	}
 .sidebar .wrapper { 
 	font: 10px josefin sans, sans-serif; 
-	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
+/*	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; */
 	padding: 10px; 
 	margin-top: 150px; 
 	width: 130px; 
 	}
 .sidebar h3.select { 
-	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
+/*	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; */
 	margin: 10px 0 5px 0; 
 	width: 97px; 
 	height: 16px; 
 
-	text-indent: 100%;
+/*	text-indent: 100%;*/
 	white-space: nowrap;
-	overflow: hidden;
+/*	overflow: hidden;*/
 	}
 .sidebar h3.archives { 
 	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
@@ -172,7 +184,7 @@ footer a:link, footer a:visited {
 	height: 10px; 
 
 	text-indent: 100%;
-	white-space: nowrap;
+	white-space: normal;
 	overflow: hidden;
 	}
 
@@ -196,12 +208,14 @@ footer a:link, footer a:visited {
 	color: #B3AE94;
 	}
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
-.extra1 {
-	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
+.header {
+    display: block;
+}
+
+
