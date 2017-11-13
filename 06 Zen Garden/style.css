@@ -12,8 +12,8 @@
 
 
 a. {
-    font: josephinsans
-}
+    font: Roboto slab;
+    }
 html {
 	margin: 0;
 	padding: 0;
@@ -27,17 +27,32 @@ body {
 	padding: 0;
 	}
 p { 
-	margin-top: 0;
+	margin-top: 1em;
     color: black;
     font: .5em Roboto slab;
+    width: 430px;
 	}
+p2{
+    font: 1em Roboto;
+    width: 430px; 
+}
 h3 { 
-	font: 1.4em comfortaa, sans-serif;
+	font: 1.4em Roboto slab;
+    text-transform: uppercase;
     font-weight: bolder;
     font-weight:900;
 	letter-spacing: 1px; 
 	margin-bottom: 0; ;
-	color: #7D775C;
+	color: #000000;
+	}
+h3b { 
+	font: 2.5em Comfortaa;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-weight:900;
+	letter-spacing: 1px; 
+	margin-bottom: 0; ;
+	color: #ffffff;
 	}
 
 a:link { 
@@ -63,18 +78,20 @@ abbr {
 /* specific divs */
 .page-wrapper { 
 	background: url(Elements/Artboard%2010.png) no-repeat top left;
-    overflow: hidden;
+/*    overflow: hidden;*/
     background-position: center top;
     background-size: cover;
-    height: 3500px;
+    height: 1600px;
     width: 100%;  
 	margin: 0; 
-	position: relative;
+    display: flex;
+    flex-direction: column;
 	}
 
 .intro { 
 	min-width: 470px;
 	width: 100%;
+    height: 1000px;
 	}
 
 header h1 { 
@@ -103,9 +120,9 @@ header h2 {
     font-family: Roboto slab;
     font-size: 2em;
     color: black;
-	margin-top: 255px; 
+	margin-top: 244px; 
 	margin-bottom: 40px;
-    margin-left: 312px;
+    margin-left: 288px;
 	width: 160px; 
 	height: 18px; 
 	float: left;
@@ -140,12 +157,13 @@ header {
 
 .summary {
     display: grid; 
-    grid-template-columns: repeat(10 , 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(12 , 1fr) ;
 	clear: both; 
 	margin: 20px 20px 20px 10px;
 /*    grid-column: 5/9;*/
-	width: 100%; 
+	width: 100%;
+    height: 1000px;
 	float: right;
     font-size: 20pt;
 	}
@@ -154,17 +172,17 @@ header {
     font-size: 1em; 
     font-weight: bolder
 	text-align: left;
-    grid-area: 1 / 6 / 2 / 9;
+    grid-area: 6/ 8/ 7 / 12;
 	}
 .summary p:nth-of-type(2) {
-    grid-area: 2 / 6 / 3 / 9;
+    grid-area: 7 / 8 / 8 / 12;
 }
 
 
 
 .preamble {
 	clear: right; 
-	padding: 0px 10px 0 10px;
+/*	padding: 0px 10px 0 10px;*/
 	}
 .supporting {	
 	padding-left: 10px; 
@@ -177,29 +195,48 @@ footer {
 footer a:link, footer a:visited { 
 	margin-right: 20px; 
 	}
-
+.design-archives{
+    display: none;
+}
+.zen-resources{
+    display: none;
+}
 .sidebar {
-/*
-	margin-left: 600px; 
-	position: absolute; 
-*/
-    display: flex;
-    flex-direction: column-reverse
+
+/*    display: flex;*/
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
 	top: 0; 
 	right: 0;
+    width: 100%;
+
+/*
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(12 , 1fr);
+*/
 	}
 .sidebar .wrapper { 
 	font: 10px josefin sans, sans-serif; 
 /*	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; */
 	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
+/*	margin-top: 150px; */
+	width: 100%; 
+    height: 250px;
+    display: grid;
+    grid-area: 3 / 1 / 5 / 13;
+    background-color: black;
 	}
+.sidebar .design-selection{
+    display: grid;
+    grid-area: 2 / 3 / 4 / 12;
+}
 .sidebar h3.select { 
 /*	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; */
 	margin: 10px 0 5px 0; 
 	width: 97px; 
-	height: 16px; 
+	height: 35px; 
 
 /*	text-indent: 100%;*/
 	white-space: nowrap;
@@ -230,11 +267,13 @@ footer a:link, footer a:visited {
 .sidebar ul {
 	margin: 0;
 	padding: 0;
+    display: grid; 
+    grid-template-columns: repeat(4,1fr) ;
 	}
 .sidebar li {
 	line-height: 1.3em; 
-	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
-	display: block; 
+/*	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; */
+	display: grid; 
 	padding-top: 5px; 
 	margin-bottom: 5px;
 	list-style-type: none;
@@ -242,8 +281,11 @@ footer a:link, footer a:visited {
 .sidebar li a:link {
 	color: #988F5E;
 	}
-.sidebar li a:visited {
-	color: #B3AE94;
+.sidebar li a:link {
+	color: #ffffff;
+	}
+.sidebar li a:nth-of-type(2) {
+	color: #9fe185;
 	}
 
 /*
@@ -259,6 +301,17 @@ footer a:link, footer a:visited {
 }
 
 .arrow{
-    align-self: center;
+/*    align-self: center;*/
+    display:grid;
+    grid-area: 2 / 9 / 3 / 10;
 }
+
+.arrow2{
+    display:grid;
+    grid-area: 6 / 4 / 7 / 5;
+    margin-left: 1.1em;
+    margin-right: -1.5em;
+    margin-top: 3.5em;
+}
+
 
