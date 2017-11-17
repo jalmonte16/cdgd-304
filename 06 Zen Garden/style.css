@@ -19,7 +19,7 @@ html {
 	padding: 0;
 	}
 body {  
-	font: 75% Open Sans, sans-serif;
+	font: 100% Roboto, sans-serif;
 /*	line-height: 1.88889;*/
 	color: #555753; 
 /*	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; */
@@ -34,17 +34,23 @@ p {
 	}
 p2{
     font: 1em Roboto;
-    width: 430px; 
+    width: 582px; 
 }
 h3 { 
-	font: 1.4em Roboto slab;
+	font: 1.2em Roboto slab;
     text-transform: uppercase;
-    font-weight: bolder;
     font-weight:900;
 	letter-spacing: 1px; 
 	margin-bottom: 0; ;
 	color: #000000;
+    grid-column: 2 / 5;
+    text-align: right;
+    margin-top: -3px;
 	}
+.explanation h3:nith-of-type(2){
+    display: grid;
+    grid-column: 3 / 5;
+}
 h3b { 
 	font: 2.5em Comfortaa;
     text-transform: uppercase;
@@ -56,19 +62,20 @@ h3b {
 	}
 
 a:link { 
-	font-weight: bold; 
+/*	font-weight: bold; */
 	text-decoration: none; 
 	color: #9fe185;
 	}
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #D4CDDC;
+	color: #61924e;
 	}
 a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	
-	}
+	color: #c6ffaf; 
+/*    text-decoration: underline;*/
+    }
+    
 abbr {
 	border-bottom: none;
     text-decoration: none;
@@ -101,7 +108,7 @@ header h1 {
     text-transform: uppercase;
 */
     background: transparent url(Elements/wordmark.png) no-repeat top left;
-    background-size: 90%;
+/*    background-size: 90%;*/
 	margin-top: 60px;
     margin-left: 250px;
 	display: block;
@@ -120,10 +127,11 @@ header h2 {
     font-family: Roboto slab;
     font-size: 2em;
     color: black;
+    font-weight: normal;
 	margin-top: 244px; 
 	margin-bottom: 40px;
-    margin-left: 288px;
-	width: 160px; 
+    margin-left: 275px;
+	width: 215px; 
 	height: 18px; 
 	float: left;
 
@@ -173,24 +181,88 @@ header {
     font-weight: bolder
 	text-align: left;
     grid-area: 6/ 8/ 7 / 12;
+    margin-top: 50px;
+    margin-left: 40px;
 	}
 .summary p:nth-of-type(2) {
     grid-area: 7 / 8 / 8 / 12;
 }
-
-
-
+.supporting {	
+/*
+	padding-left: 10px; 
+	margin-bottom: 40px;
+*/
+    display: grid; 
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(12 , 1fr) ;
+    margin-top: 170px;
+    
+	}
 .preamble {
 	clear: right; 
 /*	padding: 0px 10px 0 10px;*/
+    grid-column: 2 / 13;
+    display: grid; 
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(6 , 1fr) ;
+    height: 133px;
+    margin-top: 25px;
 	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
-
+.content {
+    grid-column: 5 / 10;
+    display: grid; 
+    margin-left: 50px;
+    
+}
+.explanation {
+    grid-column: 2 / 13;
+    grid-row: 2 / 3;
+    display: grid; 
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(6 , 1fr) ;
+    height: 171px;
+    margin-top: -15px;
+/*
+    margin-bottom: 66px;
+    margin-top: -100px;
+*/
+} 
+.participation {
+    grid-column: 2 / 13;
+    grid-row: 3 / 4;
+    display: grid; 
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(6 , 1fr) ;
+    height: 209px;
+    margin-top: -140;
+/*
+    margin-bottom: 66px;
+    margin-top: -100;
+*/
+}
+.benefits {
+    grid-column: 2 / 13;
+    grid-row: 4 / 5;
+    display: grid; 
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(6 , 1fr) ;
+    height: 76px;
+    margin-top: 70px;
+}
+.requirements {
+    grid-column: 2 / 13;
+    display: grid; 
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(6 , 1fr) ;
+    height: 300px;
+    grid-row: 5 / 6;
+    margin-top: -60;
+}
 footer { 
 	text-align: center; 
+    grid-area: 7 / 2 / 8 / 13;
+    margin-left: 100px;
+    margin-top: -60px;
 	}
 footer a:link, footer a:visited { 
 	margin-right: 20px; 
@@ -218,12 +290,12 @@ footer a:link, footer a:visited {
 */
 	}
 .sidebar .wrapper { 
-	font: 10px josefin sans, sans-serif; 
+/*	font: 14px roboto slab, sans-serif;*/
 /*	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; */
 	padding: 10px; 
 /*	margin-top: 150px; */
 	width: 100%; 
-    height: 250px;
+    height: 300px;
     display: grid;
     grid-area: 3 / 1 / 5 / 13;
     background-color: black;
@@ -231,6 +303,7 @@ footer a:link, footer a:visited {
 .sidebar .design-selection{
     display: grid;
     grid-area: 2 / 3 / 4 / 12;
+    margin-left: 60px;
 }
 .sidebar h3.select { 
 /*	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; */
@@ -269,6 +342,7 @@ footer a:link, footer a:visited {
 	padding: 0;
     display: grid; 
     grid-template-columns: repeat(4,1fr) ;
+    grid-gap: 20px 20px;
 	}
 .sidebar li {
 	line-height: 1.3em; 
@@ -283,11 +357,13 @@ footer a:link, footer a:visited {
 	}
 .sidebar li a:link {
 	color: #ffffff;
+    
 	}
 .sidebar li a:nth-of-type(2) {
 	color: #9fe185;
+    font-family: 12px roboto, serif;
 	}
-
+}
 /*
 .intro {
     display: flex;
@@ -304,14 +380,29 @@ footer a:link, footer a:visited {
 /*    align-self: center;*/
     display:grid;
     grid-area: 2 / 9 / 3 / 10;
+    margin-left: 60px;
+    margin-top: 15px;
 }
 
 .arrow2{
     display:grid;
     grid-area: 6 / 4 / 7 / 5;
-    margin-left: 1.1em;
-    margin-right: -1.5em;
-    margin-top: 3.5em;
+    margin-left: 1.7em;
+    margin-right: -2.7em;
+    margin-top: 2.7em;
 }
+p4{
+    display: grid;
+    grid-area: 4 / 1 / 5 / 2;
+}
+p5{
+    margin-top: -10px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+    color: #c6ffaf;
+}
+
 
 
