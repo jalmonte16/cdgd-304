@@ -196,6 +196,7 @@ header {
     grid-template-columns: repeat(12 , 1fr);
     grid-template-rows: repeat(12 , 1fr) ;
     margin-top: 170px;
+    height: 2700px;
     
 	}
 .preamble {
@@ -261,7 +262,7 @@ header {
 footer { 
 	text-align: center; 
     grid-area: 7 / 2 / 8 / 13;
-    margin-left: 100px;
+    margin-left: -65px;
     margin-top: -60px;
 	}
 footer a:link, footer a:visited { 
@@ -404,5 +405,7 @@ p5{
     color: #c6ffaf;
 }
 
-
+body{
+    height: 2700px;
+}
 
