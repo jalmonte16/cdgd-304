@@ -1,0 +1,53 @@
+/* CSS rules */ 
+
+
+body{
+    height: 768px;
+    width: 1366px;
+    background: url(Artboard%206.png); 
+    display: grid; 
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(12 , 1fr) ;
+    margin-right: 0px;
+}
+
+h1{
+    margin-left: 50px;
+    color: white;
+    margin-top: 10px;
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+h2{
+    font-size: 76pt;
+    grid-area: 7 / 4 / 9 / 6;
+    margin: 0px;
+}
+
+h3{
+   font-size: 76pt;
+    grid-area: 5 / 7 / 6 / 9;
+    margin: 0px; 
+}
+
+h4{
+    font-size: 76pt;
+    grid-area: 8 / 10 / 9 / 11;
+    margin: 0px;
+}
+
+#contact{
+    color: white;
+    grid-area: 1 / 11 / 2 / 12;
+    font-size: 18pt;
+    margin-top: 18px;
+}
+
+.bottom.nav{
+    grid-area: 11 / 4 / 12 / 8; 
+}
+
+ul{
+  
+}
+

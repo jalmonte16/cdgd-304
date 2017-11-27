@@ -87,7 +87,8 @@ abbr {
 	background: url(Elements/Artboard%2010.png) no-repeat top left;
 /*    overflow: hidden;*/
     background-position: center top;
-    background-size: cover;
+    background-size: 100%;
+/*    background-size: cover;*/
     height: 1600px;
     width: 100%;  
 	margin: 0; 
